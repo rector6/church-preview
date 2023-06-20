@@ -16,6 +16,9 @@ body {
   font-family: 'Ubuntu', sans-serif;
   /* font-family: "Roboto", sans-serif; */
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --body-color: #efefef;
   --nav-color: #1876f2;
@@ -90,6 +93,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
 .hero__section-button .btn {
   padding: 20px;
   border-radius: 10px;
@@ -99,11 +103,30 @@ body {
   background: #d7c9ba;
 
   cursor: pointer;
-  color: #ede6e0;
+  color: #fff;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/* button animation  */
+
+.hero__section-button btn {
+  animation: fadeDown 1000ms forwards;
+  opacity: 0;
+  animation-delay: 900ms;
+}
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Denation section for gift and others  ---- start*/
@@ -163,6 +186,70 @@ welocme section ------------------------------------------------------*/
 .welcome__image_section {
   padding: 5px 0;
   width: 100%;
+}
+/* animation page */
+.welcome_text p {
+  animation: fadeIn 900ms forwards;
+  opacity: 0;
+  animation-delay: 900ms;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+      opacity: 1;
+   transform: translateX(0);
+  }
+ 
+}
+.welcome_text h4 {
+  animation: fadeToRight 500ms forwards cubic-bezier(0.22,0.32,0,1.54);
+  opacity: 0;
+  animation-delay: 500ms;
+}
+@keyframes fadeToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+      opacity: 1;
+   transform: translateX(0);
+  }
+ 
+}
+.welcome_text h6 {
+  animation: fadeToRight 300ms forwards;
+  opacity: 0;
+  animation-delay: 300ms;
+}
+@keyframes fadeToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+      opacity: 1;
+   transform: translateX(0);
+  }
+ 
+}
+.welcome__image_section {
+  animation: fadeDown 1000ms forwards;
+  opacity: 0;
+  animation-delay: 900ms;
+}
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .welcome__image_section img {
   max-width: 100% !important;
@@ -272,6 +359,22 @@ welocme section ------------------------------------------------------*/
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+/* animation for function */
+.function-image {
+  animation: fadeDown 1000ms forwards;
+  opacity: 0;
+  animation-delay: 900ms;
+}
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* -------------join section --------------------*/
@@ -414,6 +517,24 @@ welocme section ------------------------------------------------------*/
   font-family: 'Times New Roman', Times, serif;
   margin-left: 10px;
   line-height: 25px; */
+}
+
+
+/* animation for active section */
+.activity-section {
+  animation: fadeIn 1000ms forwards;
+  opacity: 0;
+  animation-delay: 900ms;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 /*--------------------------- pastor sectio css start =--------------*/
 .pastor__section_wrapper{
