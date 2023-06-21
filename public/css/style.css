@@ -47,7 +47,7 @@ h3 {
 }
 .hero {
   width: 100%;
-  background-image: url("../assets/carusel pick.JPG");
+  background-image: url("/image/carusel pick.JPG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
