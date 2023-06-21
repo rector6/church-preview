@@ -19,6 +19,24 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.section {
+  padding-block-end: 50px;
+}
+.title  {
+  color: black;
+  font-weight: 700; 
+  line-height: 1.45;
+}
+h1 {
+  font-size: 25px;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
 :root {
   --body-color: #efefef;
   --nav-color: #1876f2;
@@ -290,7 +308,128 @@ welocme section ------------------------------------------------------*/
   margin: 10px;
 }
 /*------------------------ function section -----------------*/
-.function__setion {
+.section-subtitle {
+  color: blue;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.title-wrapper {
+  padding: 25px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-title {
+  margin-block: 10px;
+}
+.service .container {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 20px;
+}
+.service-card:nth-child(2) {
+  background-color: rgb(239, 239, 222);
+  box-shadow: 10px 10px 5px rgb(239, 239, 222);
+  transition: 500ms fadeIn forwards;
+
+}
+@keyframes fadeIn {
+  0% {
+    transform: translateX(-13);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.service-card:nth-child(3) {
+  background-color: rgb(190, 178, 178);
+  box-shadow: 10px 10px 5px rgb(145, 123, 123);
+}
+.service-card:nth-child(4) {
+  background-color: rgb(171, 171, 186);
+  box-shadow: 10px 10px 5px rgb(143, 143, 159);
+}
+.service-card {
+  padding: 25px 20px;
+  border-radius: 20px;
+}
+.service-card .card-title {
+  margin-block: 10px 5px;
+}
+/* .card-icon img {
+  color: #fff;
+  background-color: #b1aeae;
+  border-radius: 50%;
+  width: 70px;
+} */
+.card-title {
+  text-align: center;
+}
+/* animation for function */
+.title-wrapper {
+  animation: fadeToRight 900ms forwards;
+  opacity: 0;
+  animation-delay: 900ms;
+  }
+  @keyframes fadeToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+      opacity: 1;
+   transform: translateX(0);
+  }
+  }
+.service-card:nth-child(2) {
+animation: fadeToRight 600ms forwards;
+opacity: 0;
+animation-delay: 600ms;
+}
+@keyframes fadeToRight {
+from {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+to {
+    opacity: 1;
+ transform: translateX(0);
+}
+}
+.service-card:nth-child(3) {
+  animation: fadeToRight 500ms forwards;
+  opacity: 0;
+  animation-delay: 500ms;
+  }
+  @keyframes fadeToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+      opacity: 1;
+   transform: translateX(0);
+  }
+  
+  }
+  .service-card:nth-child(4) {
+    animation: fadeToRight 300ms forwards;
+    opacity: 0;
+    animation-delay: 300ms;
+    }
+    @keyframes fadeToRight {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+     transform: translateX(0);
+    }
+    
+    }
+/* .function__setion {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -359,23 +498,7 @@ welocme section ------------------------------------------------------*/
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-}
-/* animation for function */
-.function-image {
-  animation: fadeDown 1000ms forwards;
-  opacity: 0;
-  animation-delay: 900ms;
-}
-@keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+} */
 
 /* -------------join section --------------------*/
 .join__section-wrapper {
@@ -683,7 +806,7 @@ span {
   padding: 10px 0;
   overflow: hidden;
 }
-.title {
+.titles {
   text-align: center;
   font-size: 33px;
   padding: 30px;
