@@ -71,7 +71,16 @@
     }
     .nav-active {
        transform: translateX(0%);
-    }.hero__text {
+    }
+    /* hero section */
+    .hero {
+        background-image: url("/image/carusel pick.JPG");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100px;
+    }
+    .hero__text {
         /* width: 50%; */
         padding: 10px 0px;
         /* margin: 20px 0; */
@@ -184,7 +193,7 @@
     .join__section-wrapper {
         width: 100%;
         min-height: 30vh;
-        background-image: url("/image/pick.JPG");
+        background-image: url("/image/join-pick.JPG");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
